@@ -25,6 +25,7 @@
 .rps-logo {
   width: 320px;
   height: 200px;
+  margin-top: -30px;
 }
 
 .weapons-container {
@@ -34,6 +35,7 @@
   align-items: center;
   justify-content: space-evenly;
   color: red;
+  margin-top: -30px;
 }
 
 .weapons-container img {
@@ -47,6 +49,7 @@
   align-items: center;
   justify-content: center;
   width: 45%;
+  color: wheat;
 }
 
 .computer-weapon-container {
@@ -55,6 +58,7 @@
   justify-content: center;
   align-items: center;
   width: 45%;
+  color: wheat;
 }
 
 .weapons-container h1 {
@@ -67,6 +71,7 @@
   width: 100%;
   padding: 5px;
   justify-content: center;
+  margin-top: -30px;
 }
 
 .display-win-lose-tie-container h1 {
@@ -112,10 +117,22 @@
 
 .player-weapon-btns {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 15px 0;
+  gap: .5em;
+  margin-top: -20px;
+  color: wheat;
+  font-size: 14px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .btns-container {
@@ -130,7 +147,7 @@
   cursor: pointer;
   overflow: hidden;
   padding: 10px;
-  border: none;
+  border: 1px solid wheat;
 }
 
 .btns-container button {
@@ -178,7 +195,7 @@
 }
 
 .shaker {
-  animation: shakePlayer 0.8s linear;
+  animation: shakePlayer 0.9s linear;
 }
 
 @keyframes shakePlayer {

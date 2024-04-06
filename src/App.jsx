@@ -53,7 +53,7 @@ function App() {
     }
     
     setShakeClassName('')
-  }, 1000);
+  }, 900);
   }
 
   useEffect(() => {
@@ -115,6 +115,8 @@ function App() {
       </div>
 
       <div className="player-weapon-btns">
+        <p>SELECT YOUR WEAPON</p>
+        <div className="btns">
       {weapons.map((weapon, i) => (
         <div key={i}>
         <div className="btns-container">
@@ -122,6 +124,7 @@ function App() {
         </div>
         </div>
       ))}
+      </div>
       </div>
 
       </div>
