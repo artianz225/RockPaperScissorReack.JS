@@ -104,13 +104,13 @@ function App() {
       </div>
 
       <div className="score-board-container">
-        <div className="each-score">
-          <h1 className='score-header'>Your Score</h1>
-          <h1 className='score-number'>{playerScore}</h1>
+        <div className="score-container">
+          <h1 className='player-score-header'>Your Score</h1>
+          <h1 className='player-score-header'>Computer Score</h1>
         </div>
-        <div className="each-score">
-          <h1 className='score-header'>Computer Score</h1>
-          <h1 className='score-number'>{compterScore}</h1>
+        <div className="score-container">
+          <h1 className='each-score'>{playerScore}</h1>
+          <h1 className='each-score'>{compterScore}</h1>
         </div>
       </div>
 
